@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import DefaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
     darkMode: ["class"],
@@ -80,7 +81,7 @@ export default {
             },
             fontFamily: {
                 sans: "Inter, Poppins, ui-sans-serif, system-ui, sans-serif",
-                code: ['Fira Code VF' , '"JetBrains Mono"', 'monospace', ...defaultTheme.fontFamily.mono],
+                code: ['Fira Code VF' , '"JetBrains Mono"', 'monospace', ...DefaultTheme.fontFamily.mono],
             },
             keyframes: {
                 "accordion-down": {
