@@ -1,0 +1,53 @@
+{
+  "name": "@sophat/table",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./dist/index.js",
+    "./table-static": "./dist/static/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "demo:start": "parcel ./src/demo/index.html --open",
+    "demo:build": "parcel build ./src/demo/index.html",
+
+    "start": "tsup --watch",
+    "build": "tsup --minify && tsc --build tsconfig.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turbotechlabs/node-libs.git"
+  },
+  "keywords": [
+    "smarterp-libs"
+  ],
+  "author": "pphatdev <leatsophat02@gmail.com>",
+  "maintainers": [
+    "pphatdev <info.sophat@gmail.com> (https://github.com/pphatdev)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turbotechlabs/node-libs/issues"
+  },
+  "homepage": "https://github.com/turbotechlabs/node-libs#readme",
+  "description": "@smarterp/libs is a collection of utility functions and classes designed to simplify common tasks in web development. It includes modules for formatting dates, currency values, quantity management, and more.",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.1.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "jest-cucumber": "^4.4.0",
+    "parcel-bundler": "^1.12.5",
+    "tailwind-merge": "^2.5.2",
+    "typescript": "^5.4.5"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
